@@ -146,6 +146,18 @@ i {
     transform: scale(1.07);
   }
 }
+
+.arrastar {
+  top: 115px; /* Ou ajuste o valor conforme necessário */
+  position: relative; /* Adicionei a propriedade position para garantir que a classe .arrastar tenha um contexto de posicionamento */
+}
+
+.seta{
+  width: 50px;
+  top: 110px;
+  position: relative;
+}
+
 @media screen and (max-width: 768px) {
   .hero {
     min-height: 60vh;
