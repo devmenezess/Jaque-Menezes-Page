@@ -147,15 +147,23 @@ i {
   }
 }
 
-.arrastar {
-  top: 115px; /* Ou ajuste o valor conforme necessário */
-  position: relative; /* Adicionei a propriedade position para garantir que a classe .arrastar tenha um contexto de posicionamento */
+.seta {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  top: 110px;
+  animation: scaleButton 0.5s alternate infinite;
 }
 
-.seta{
-  width: 50px;
-  top: 110px;
-  position: relative;
+@keyframes scaleButton {
+  from {
+    transform: scale(1.01);
+  }
+  to {
+    transform: scale(1.14);
+  }
 }
 
 @media screen and (max-width: 768px) {

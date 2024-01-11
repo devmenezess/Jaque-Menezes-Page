@@ -227,17 +227,24 @@ i {
     transform: scale(1.07);
   }
 }
-.arrastar {
-  top: 115px; /* Ou ajuste o valor conforme necessário */
-  position: relative; /* Adicionei a propriedade position para garantir que a classe .arrastar tenha um contexto de posicionamento */
-}
-
 .seta {
-  width: 50px;
-  top: 110px;
+  display: flex;
   position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  top: 110px;
+  animation: scaleButton 0.5s alternate infinite;
 }
 
+@keyframes scaleButton {
+  from {
+    transform: scale(1.01);
+  }
+  to {
+    transform: scale(1.14);
+  }
+}
 @media screen and (max-width: 768px) {
   .hero {
     min-height: 60vh;
